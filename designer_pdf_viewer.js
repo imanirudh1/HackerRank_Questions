@@ -51,3 +51,16 @@ const letterHeight = [
 ]
 const word = 'abc'
 console.log(designerPdfViewer(letterHeight, word))
+
+// Another way to solve
+// function designerPdfViewer(h, word) {
+//     let maxHeight = 0;
+
+//     for (let c of word.toUpperCase()) {
+//         let charHeight = h[c.charCodeAt(0) - 65];
+//         if (charHeight > maxHeight)
+//             maxHeight = charHeight;
+//     }
+
+//     return word.length * maxHeight;
+// }
